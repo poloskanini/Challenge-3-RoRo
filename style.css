@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+img {
+  object-fit: contain;
+}
+
 /* HEADINGS */
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -17,7 +21,6 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
-
 
 /*** Customs Properties ***/
 :root {
@@ -31,12 +34,13 @@ body {
   color: #FFF;
   background-image: url(images/bg-mobile.svg);
   background-repeat: no-repeat;
+  max-height: 100vh;
 }
 
 /* LOGO */
 
 .logo-container {
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .logo-image {
