@@ -87,6 +87,7 @@ body {
   box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+  transition: all ease-in-out .2s;
 }
 
 .register-button:hover {
@@ -104,10 +105,15 @@ body {
   font-size: 1.5rem;
   padding: .5rem;
   color: #FFF;
+  transition: all ease-in-out .3s;
 }
 
-/*** DESKTOP ***/
+.fab:hover {
+  color: violet;
+  opacity: .8;
+}
 
+/*** DESKTOP VERSION ***/
 @media screen and (min-width: 900px) {
 
   body {
