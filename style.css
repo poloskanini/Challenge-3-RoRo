@@ -1,0 +1,190 @@
+/*** Basic reset ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADINGS */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
+/*** Customs Properties ***/
+:root {
+  --mainViolet: hsl(257, 40%, 49%);
+}
+
+/* COLORS */
+body {
+  background-color: var(--mainViolet);
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+/* LOGO */
+
+.logo-container {
+  height: 10vh;
+}
+
+.logo-image {
+  width: 8rem;
+  margin: 2rem;
+}
+
+/* MOCKUP */
+.mockup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.mockup-image {
+  width: 83%;
+  margin-top: 3rem;
+}
+
+/* MAIN HEADING */
+.main-heading {
+  margin: 3rem 15% 1.5rem 15%;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.main-subtitle {
+  margin: 0 6%;
+  text-align: center;
+}
+
+
+/* Button */
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.register-button {
+  width: 14rem;
+  border-radius: 5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: #FFF;
+  color: var(--mainViolet);
+  box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+}
+
+.register-button:hover {
+  background-color: lightgray;
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.fab {
+  font-size: 1.5rem;
+  padding: .5rem;
+  color: #FFF;
+}
+
+/*** DESKTOP ***/
+
+@media screen and (min-width: 900px) {
+
+  body {
+    background-color: var(--mainViolet);
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .logo-image {
+    width: 15rem;
+    margin: 6rem 0 3rem 9rem;
+  }
+
+  .mockup {
+    display: block;
+  }
+
+  .mockup-image {
+    width: 90%;
+    margin: 6rem 2rem 0 8rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+  .main-heading, .main-subtitle {
+    text-align: left;
+    margin: 0;
+    width: 72%;
+    margin-bottom: 2rem;
+  }
+
+  .main-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    display: block;
+    margin-top: 0;
+  }
+
+  .register-button {
+    width: 12rem;
+    border-radius: 5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #FFF;
+    color: var(--mainViolet);
+    box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 22px -5px rgba(0,0,0,0.75);
+  }
+
+  .socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .fab {
+    font-size: 2rem;
+    padding: .8rem;
+  }
+  }
